@@ -1,0 +1,17 @@
+
+<html>
+    <script>
+    let salariohora = parseInt (prompt('QUANTO VOCE GANHA POR HORA?'));
+    let horas=parseInt (prompt ('QUANTAS HORAS TRABALHA NO MES?'));
+
+    let salariobruto = salariohora * horas;
+    let IR = salariobruto*0.11;
+    let INSS = salariobruto*0.08;
+    let sindicato = salariobruto*0.05;
+    let salarioliq= salariobruto - (IR+INSS+sindicato);
+
+    alert("+ Salário Bruto: R$"+salariobruto.toFixed(2)+"\n - IR (11%): R$\
+     "+IR.toFixed(2)+"\n - INSS (8%) : R$ "+ INSS.toFixed(2)+"\n- SINDICATO (5%) : R$ \
+     "+sindicato.toFixed(2)+"\n SALARIO LIQUIDO = R$ " + salarioliq.toFixed(2) );
+    </script>
+</html>

@@ -1,0 +1,29 @@
+<html>
+    <script>
+    
+    
+    let s = (prompt('DIGITE M PARA MASCULINO E F PARA FEMININO  DE ACORDO COM O SEXO'));
+    
+    while (s != "m" && s != "f" && s != " "){
+         alert('Opcao Invalida. Tente Novamente');
+         s = (prompt('DIGITE M PARA MASCULINO E F PARA FEMININO  DE ACORDO COM O SEXO'));
+    }
+    if (s == "f") {
+        let h = parseFloat(prompt('Amiga, digite a sua altura'));
+        let peso = parseFloat  ((62.1*h)-44.7);
+        alert (peso.toFixed(1)+' e o seu peso ideal');
+        }
+    
+    else if (s == "m") {
+        let h = parseFloat(prompt('Amigo, digite a sua altura'));
+        let peso = parseFloat  ((72.7*h)-58);
+        alert (peso.toFixed(1)+' e o seu peso ideal');
+    
+    
+}
+
+
+
+    
+    </script>
+</html>
