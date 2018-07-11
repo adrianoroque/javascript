@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+<script>
+    let numeros = new Array (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20);
+    
+    let PAR = [];
+    let IMPAR = [];
+    let x = 0;
+    let y = 0;
+    for (let i = 0; i < numeros.length; i++) {
+
+        if (numeros[i]%2  == 0){
+             
+        PAR[x] = numeros[i];  //PAR.push(numeros[i]);
+            x++;              // sem x++
+        }else{
+            
+        IMPAR[y] = numeros[i]; //IMPAR.push(numeros[i]);
+
+            y++;               // sem y++
+        }
+}
+
+alert('20 NÚMEROS INTEIROS: '+numeros+'\n'+'NÚNEROS PARES: '+PAR+'\n'+'NÚMEROS IMPARES: '+IMPAR);
+
+</script>
+</html>

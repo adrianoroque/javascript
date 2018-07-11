@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <meta charset="UTF-8">
+<script>
+    var letras = new Array ("a","b","c","d","e","f","g","h","i","j" );
+    let contador = 0;
+    let consoantes = '';
+            for(i=0; i< letras.length; i++ ){
+                if((letras[i]!="a") && (letras[i]!="e") && (letras[i]!="i") && (letras[i]!="o") && (letras[i]!="u")){
+                        contador += 1;
+                        consoantes += letras[i];
+                }                 
+            }
+            
+            alert('As consoantes são as seguintes: '+consoantes+'\n'+'O número de consoantes é '+contador);
+            
+
+
+    
+</script>
+</html>
