@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <meta charset="UTF-8">
+
+    <script>
+       /* function soma(valor1, valor2){
+            let resultado = valor1 + valor2;
+            return resultado;
+       }
+       
+       
+       let x = 20;
+       let y = 30;
+
+       let sum = soma(x, y);
+       alert(sum );*/
+
+       let valores = [1,5,9,"bagunça",100];
+
+       let sum = soma (valores);
+
+       alert(sum);
+
+       function soma (numeros){
+           let resultado = 0;
+           for (let i = 0; i < numeros.length; i++){
+               if (!isNaN(numeros[i])){
+               
+               resultado += numeros[i];
+           }
+           }
+           return resultado;
+       }
+    
+    </script>
+    
+
+</html>
